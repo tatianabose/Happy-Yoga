@@ -189,6 +189,31 @@ body {
 }
 
 
+.courses{
+    padding: 8%;
+    
+}
+
+.course-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.courses-2{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+}
+
+.course-1-grid{
+   
+}
+
+.course-1-grid img{
+    height: 200px;
+}
 
 
 .testimonial-3{
@@ -199,57 +224,7 @@ body {
     
 }
 
-.courses{
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5%;
-}
-
-.courses-1{
-    
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2%;
-    align-items: center;
-    padding: 5%;
-}
-
-.courses-1 h2{
-    font-size: 2.1rem;
-    margin-top: 5%;
-    font-family: "Playfair Display";
-    font-weight: 700;
-}
-
-.courses-1 p{
-    font-size: medium;
-}
-
-.course-1-grid{
-    
-    background-color: red;
-    display: flex;
-   
-    
-    flex-flow: column;
-   
-}
-
-.course-1-grid img{
-    min-height: 100px;
-    
-   max-height: 180px;
-
-
-    
-}
-
-.courses-2{
-    display: flex;
-    justify-content: center;
-}
 
 .features{
     margin: 50px;
@@ -268,6 +243,33 @@ body {
     margin: 1%;
 }
 
+.btn-courses{
+    display: flex; 
+    justify-content: right
+}
+
+
+@media screen and (max-width:1325px){
+
+    .course-1-grid img{
+    height: 160px;
+}
+
+ }
+
+  @media screen and (max-width:1057px){
+
+    .course-1-grid img{
+    height: 140px;
+}
+
+.course-1{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+
+ }
 
 @media screen and (max-width:950px){
     .hero-home{
@@ -281,6 +283,11 @@ body {
     .main-h1{
      font-size: 4rem;
     }
+
+    .main-h2{
+     font-size: 2.5rem;
+    }
+ 
  
     .hero-home p{
      font-size: 19px;
@@ -292,8 +299,23 @@ body {
         background-color: white;
         align-items: center;
     }
+
+    .courses-2{
+    display: grid;
+    grid-template-columns: 1fr;
+   
+}
+
+ .course-1-grid img{
+    height: 350px;
+}
+
+
      
  }
+
+ 
+
  
  @media screen and (max-width:700px){
    
@@ -311,7 +333,7 @@ body {
     }
     
     .main-h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 700;
         font-family: "Playfair Display";
     }
@@ -320,14 +342,22 @@ body {
         font-size: small;
         text-align: center;
     }
-    .courses-1{
+   
+    .course-1-grid img{
+    height: 250px;
+}
 
-        display:grid;
-        grid-template-columns: 1fr ;
-        align-items: center;
-        padding: 100px;
-    }
+.course-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
 
+.btn-courses{
+    display: flex; 
+    justify-content: center;
+    margin: 30px 0px;
+}
         
   }
  
@@ -362,5 +392,10 @@ body {
             display: flex;
             flex-flow: column;
             align-items: center;
+        }
+
+
+         .course-1-grid img{
+        height: 200px;
         }
   }
