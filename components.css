@@ -19,7 +19,9 @@ body {
     align-items: center;
     padding: 15px 5%;
     background-color: white;
-    
+    position: sticky;
+    top: 0;
+    right: 0;
 
 }
 
@@ -207,9 +209,7 @@ body {
     grid-gap: 2%;
 }
 
-.course-1-grid{
-   
-}
+
 
 .course-1-grid img{
     height: 200px;
